@@ -14,3 +14,16 @@ string[] CreateArray()
     }
     return array;
 }
+
+int CheckArray(string[] array)
+{
+    int countArray = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            countArray++;
+        }
+    }
+    return countArray;
+}
