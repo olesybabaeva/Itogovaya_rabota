@@ -27,3 +27,20 @@ int CheckArray(string[] array)
     }
     return countArray;
 }
+
+string[] NewArray(string[] array)
+{
+    string[] newArray = new string[CheckArray(array)];
+    int size = 0;
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[size] = array[i];
+            size++;
+        }
+    }
+    return newArray;
+}
+
